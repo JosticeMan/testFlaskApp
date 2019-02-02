@@ -3,8 +3,9 @@ File: flask_app.py
 Version: 1.1
 Description: First flask app for educational and testing purposes
 Author: Justin Yau
+Source: Tutorial followed can be found at https://www.youtube.com/watch?v=QnDWIZuWYW0
 """
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for
 app = Flask(__name__, template_folder="templates")
 
 posts = [
