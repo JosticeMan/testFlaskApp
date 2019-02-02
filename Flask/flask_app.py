@@ -10,5 +10,15 @@ app = Flask(__name__)
 
 # Use set FLASK_APP=python_file_name.py to start flask
 @app.route("/")
-def hello():
+@app.route("/home")
+def home():
     return "Hello World!"
+
+
+@app.route("/about-me")
+def about():
+    return "Justin Yau RIT CS Student"
+
+
+if __name__ == '__main__':
+    app.run(debug=True)
